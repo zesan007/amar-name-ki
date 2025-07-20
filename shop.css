@@ -1,0 +1,102 @@
+/* Container for max-width centering */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.product-section {
+  background: #232F3E;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(35, 47, 62, 0.10);
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  padding: 3rem 2vw 2rem 2vw;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(35, 47, 62, 0.10);
+  padding: 1rem 0.7rem 1.2rem 0.7rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  min-height: 320px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 0 8px;
+  }
+  .product-section {
+    padding: 2rem 1vw;
+  }
+  .product-card {
+    min-height: 220px;
+    padding: 0.7rem 0.3rem 1rem 0.3rem;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    padding: 0 4px;
+  }
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .product-card {
+    min-height: 180px;
+    padding: 0.5rem 0.1rem 0.7rem 0.1rem;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 0 2px;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-card {
+    min-height: 120px;
+    padding: 0.2rem 0.05rem 0.3rem 0.05rem;
+  }
+}
+
+.category-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0 2.5rem 0;
+}
+.category-btn {
+  background: #fff;
+  color: #232F3E;
+  border: 2px solid #FF9900;
+  border-radius: 22px;
+  padding: 0.6rem 1.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(255,153,0,0.06);
+  outline: none;
+}
+.category-btn:hover, .category-btn:focus {
+  background: #FF9900;
+  color: #fff;
+  border-color: #FF9900;
+  box-shadow: 0 4px 16px #FF990055;
+}

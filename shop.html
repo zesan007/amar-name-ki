@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop – Findly Mart</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Findly Mart</div>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-socials">
+      <a href="https://www.tiktok.com/@dailyhuntwithz" target="_blank" class="social-icon" aria-label="TikTok"><img src="tiktok.png" alt="TikTok" width="22" height="22" style="border-radius:6px;"></a>
+      <a href="https://www.instagram.com/dailyhuntwithz/" target="_blank" class="social-icon" aria-label="Instagram"><img src="instagram.png" alt="Instagram" width="22" height="22" style="border-radius:6px;"></a>
+      <a href="https://whatsapp.com/channel/0029Vb5uPS70bIddeMOQCJ0r" target="_blank" class="social-icon" aria-label="WhatsApp"><img src="whatsaoo.png" alt="WhatsApp" width="22" height="22" style="border-radius:6px;"></a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <section class="product-section" style="margin-top:2.5rem;">
+        <h2 style="text-align:center;">All Products</h2>
+        <div class="category-btns" style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin:2rem 0 2.5rem 0;">
+          <button class="category-btn" data-tag="All">All</button>
+          <button class="category-btn" data-tag="Fashion">Fashion</button>
+          <button class="category-btn" data-tag="Electronic">Electronic</button>
+          <button class="category-btn" data-tag="Home Appliances">Home Appliances</button>
+          <button class="category-btn" data-tag="Mother & Baby">Mother & Baby</button>
+          <button class="category-btn" data-tag="Sports & Outdoors">Sports & Outdoors</button>
+          <button class="category-btn" data-tag="Home & Lifestyle">Home & Lifestyle</button>
+          <button class="category-btn" data-tag="Watches">Watches</button>
+          <button class="category-btn" data-tag="Bags">Bags</button>
+          <button class="category-btn" data-tag="Jewellery">Jewellery</button>
+        </div>
+        <div class="product-grid" id="product-grid">
+          <!-- Products will be rendered here by shop.js -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Findly Mart.</p>
+  </footer>
+
+  <!-- Product Details Modal -->
+  <div id="modal-overlay" class="modal-overlay" style="display:none;"></div>
+  <div id="product-modal" class="product-modal" style="display:none;">
+    <button class="modal-close" id="modal-close">&times;</button>
+    <div class="modal-content">
+      <div class="modal-left">
+        <h3 id="modal-title"></h3>
+        <div class="modal-rating">Ratings: 4.5</div>
+        <p id="modal-desc"></p>
+      </div>
+      <div class="modal-right">
+        <div class="modal-photo">
+          <img id="modal-img" src="" alt="Product Image">
+        </div>
+        <div class="modal-price">Price: $34</div>
+        <div class="modal-info">
+          <div>Ships from: Amazon</div>
+          <div>Sold by: <span class="seller-link">XP-PEN Technology</span></div>
+          <div>Returns: FREE returns, 30-day refund/replacement</div>
+        </div>
+        <a id="modal-link" href="#" target="_blank" class="modal-buy-btn">Buy on Amazon</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="shop.js"></script>
+</body>
+</html>
