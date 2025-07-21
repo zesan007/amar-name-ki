@@ -3,8 +3,8 @@ const supabaseUrl = 'https://fonymocqudgjjptrqrou.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZvbnltb2NxdWRnampwdHJxcm91Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI5NDk4MDcsImV4cCI6MjA2ODUyNTgwN30.tmIQccwabCu4s7DS3XXPrTW-6jDBwEPzhcnn-aiHO3k';
 
 // --- Admin Login System ---
-const ADMIN_USER = 'zesan007','safaukil';
-const ADMIN_PASS = 'zesan@00769','safa@008';
+const ADMIN_USER = 'zesan007';
+const ADMIN_PASS = 'zesan@00769';
 
 const loginForm = document.getElementById('login-form');
 const loginError = document.getElementById('login-error');
